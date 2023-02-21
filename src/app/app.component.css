@@ -1,0 +1,11 @@
+/* .special {
+    border: 2px solid green;
+} */
+.active {
+    background-color: blue;
+    color: white;
+}
+.inactive {
+    background-color: grey;
+    color: white;
+}
