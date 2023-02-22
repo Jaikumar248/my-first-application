@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, AfterViewInit, ViewChildren } from '@angular/core';
+import { ServerComponent } from './server/server.component';
 
 @Component({
   selector: 'app-root',
@@ -51,9 +52,49 @@ export class AppComponent {
 //     "ram": "128gb"
 //   }
 // ]
-num1: number = 4;
-num2: number = 6;
-op: string=''
+// num1: number = 4;
+// num2: number = 6;
+// op: string=''
+
+name: string = "angular javascript "
+salary: number = 300000;
+person1 = {
+  'name': "xyz",
+  'age': 20,
+  'salary': 250000
+}
+dob = new Date();
+marks: number = 0.98;
+company: string = "Microsoft";
+// wish: string = "Hello Good Morning";
+person = {
+  "name": "abc",
+  "age": 22,
+  "gender": "male"
+}
+wish: string = "Good Morning";
+email = "";
+updateEmail(ip) {
+  this.email = ip.value;
+}
+ctitle="parent component"
+
+data1 ="This is demo of input decorator"
+parr = [1,2,3,4,5];
+cdata;
+@ViewChild(ServerComponent) server
+test(){
+ console.log( this.server.passtoParent())
+}
+@ViewChild('para') p 
+@ViewChildren('heading') h ;
+test1(){
+  console.log(this.p.nativeElement.innerText);
+ for(let ele of this.h) {
+  console.log(ele.nativeElement.innerText)
+ }
+}
+
 
 
  }

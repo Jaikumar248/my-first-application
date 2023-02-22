@@ -78,4 +78,49 @@ Name:<input type="text" (input)="changeName($event)">
 
   </div> -->
 
+  <!--    Angular Pipes    -->
+  <!-- <h1>{{name | lowercase}}</h1>
+  <h2>{{salary | currency : 'INR' : 'symbol'}}</h2>
+  <p>{{person1 | json}}</p>
+  <p>{{dob | date: 'dd/MM/yyyy'}}</p>
+  <p>{{marks | percent}}</p>
+  <p>{{company | slice: 2:4 }}</p> -->
+  <!-- Custom Pipes In Angular -->
+  <!-- <h1>{{person | test: wish }}</h1> -->
 
+<!-- Template refernce variable -->
+<!-- Email:<input type="text" placeholder="Enter email" #e value="anc@gmail.com">
+<button (click)="updateEmail(e)">update</button>
+<div>{{email}}</div> -->
+
+<!-- Parent and Child Components in Angular -->
+<!-- <div>{{title}}</div>
+<p>{{data1}}</p> -->
+<!-- <app-server [d1]="data1" [d2]="parr"></app-server> -->
+<!-- <div (click)="test($event)">trst</div> -->
+<!-- {{cdata}} -->
+<!-- <app-server (customevent)="cdata=$event"></app-server> -->
+
+<!-- Using Template Reference Variable -->
+<!-- <div>
+  {{child.data}}
+</div> -->
+<!-- {{child.demo()}} -->
+<!-- <app-server #child></app-server> -->
+
+
+<!-- <button (click)="test()">click</button>
+<app-server></app-server> -->
+
+
+<!-- DOM Manipulation in Angular -->
+<!-- <div #test>This is Div</div>
+<button (click)="changediv()">click</button> -->
+
+<p #para>This is paragraph 1</p>
+<p #para>This is paragraph 2</p>
+
+<h2 #heading>This is heading1 </h2>
+<h2 #heading>This is heading2</h2>
+
+<button (click)="test1()">click</button>

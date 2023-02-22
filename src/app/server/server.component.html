@@ -1,1 +1,13 @@
-<p>The Server</p>
+<p>This is Server HTML Component</p>
+<p>{{childtitle}}</p>
+<p>{{d1}}</p>
+<p>{{d2}}</p>
+<div *ngFor="let n of d2">
+    {{n}}
+</div>
+<button (click)="passToParent()">sendData</button>
+
+<input type="text" (input)="updatemessage($event)">
+<input type="text" [(ngModel)]="data"><br>
+
+<input type="text" [(ngModel)]="data1">

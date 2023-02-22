@@ -6,11 +6,13 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { ServerComponent } from './server/server.component';
+import { TestPipe } from './test.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ServerComponent
+    ServerComponent,
+    TestPipe
   ],
   imports: [
     BrowserModule,
