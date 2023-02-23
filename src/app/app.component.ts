@@ -67,33 +67,33 @@ dob = new Date();
 marks: number = 0.98;
 company: string = "Microsoft";
 // wish: string = "Hello Good Morning";
-person = {
-  "name": "abc",
-  "age": 22,
-  "gender": "male"
-}
-wish: string = "Good Morning";
-email = "";
-updateEmail(ip) {
-  this.email = ip.value;
-}
-ctitle="parent component"
+// person = {
+//   "name": "abc",
+//   "age": 22,
+//   "gender": "male"
+// }
+// wish: string = "Good Morning";
+// email = "";
+// updateEmail(ip) {
+//   this.email = ip.value;
+// }
+// ctitle="parent component"
 
-data1 ="This is demo of input decorator"
-parr = [1,2,3,4,5];
-cdata;
-@ViewChild(ServerComponent) server
-test(){
- console.log( this.server.passtoParent())
-}
-@ViewChild('para') p 
-@ViewChildren('heading') h ;
-test1(){
-  console.log(this.p.nativeElement.innerText);
- for(let ele of this.h) {
-  console.log(ele.nativeElement.innerText)
- }
-}
+// data1 ="This is demo of input decorator"
+// parr = [1,2,3,4,5];
+// cdata;
+// @ViewChild(ServerComponent) server
+// test(){
+//  console.log( this.server.passtoParent())
+// }
+// @ViewChild('para') p 
+// @ViewChildren('heading') h ;
+// test1(){
+//   console.log(this.p.nativeElement.innerText);
+//  for(let ele of this.h) {
+//   console.log(ele.nativeElement.innerText)
+//  }
+// }
 
 
 
